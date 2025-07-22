@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangirala Satya Sai Karthik | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles inspired by Apple's aesthetic */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Section fade-in animation on scroll */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom styling for cards and hover effects */
+        .project-card, .job-experience {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover, .job-experience:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        /* Glassmorphism effect for the header */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        /* Animation for the main hero image */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .hero-image-animation {
+            animation: zoomIn 1s ease-out 0.2s forwards;
+            opacity: 0; /* Start as invisible */
+        }
+    </style>
+</head>
+<body class="bg-white text-[#1d1d1f]">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl">Karthik</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#skills" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[calc(100vh-4rem)] flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">Tangirala Satya Sai Karthik</h1>
+                        <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto md:mx-0">
+                            Computer Science & Data Science undergraduate with a passion for software development and machine learning.
+                        </p>
+                        <div class="mt-8 flex justify-center md:justify-start gap-4">
+                            <a href="mailto:tsatyasaikarthik@gmail.com" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition-colors">
+                                Get In Touch
+                            </a>
+                            <a href="https://github.com/saikarthik2710" target="_blank" class="bg-gray-800 text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition-colors">
+                                View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image-animation">
+                        <img src="https://i.postimg.cc/5tGwDJQT/Whats-App-Image-2025-07-22-at-16-18-11-c735ad56.jpg" 
+                             alt="Tangirala Satya Sai Karthik" 
+                             class="rounded-3xl shadow-2xl w-full max-w-md mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="fade-in-section py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16">About Me</h2>
+                <div class="grid lg:grid-cols-3 gap-16 items-center">
+                    <div class="lg:col-span-1">
+                        <img src="https://i.postimg.cc/zvP5FxcC/Whats-App-Image-2025-07-22-at-16-19-10-1220fffe.jpg" alt="About Me Image" class="rounded-2xl shadow-lg w-full h-full object-cover max-w-sm mx-auto">
+                    </div>
+                    <div class="space-y-8 lg:col-span-2">
+                         <div>
+                            <h3 class="text-2xl font-semibold mb-4">Summary</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A dedicated Computer Science and Data Science student with practical experience in Java, AI tools, and data-driven solutions. I have a strong problem-solving mindset, a commitment to continuous learning, and hold a Microsoft Certified Specialist credential.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg">B.Tech in Computer Science and Data Science</h4>
+                                    <p class="text-gray-600">B V Raju Institute of Technology, Narsapur</p>
+                                    <p class="text-sm text-gray-500">2022-2026 | Cumulative GPA: 7.96/10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="fade-in-section py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="job-experience bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-semibold">Machine Learning Intern</h3>
+                            <span class="text-sm font-medium text-gray-500">May 2024 - June 2024</span>
+                        </div>
+                        <p class="text-lg text-gray-700 font-medium mt-1">SWECHA TELANGANA | Hyderabad, India</p>
+                        <ul class="mt-4 list-disc list-inside text-gray-600 space-y-2">
+                            <li>Contributed to the development of Telugu AI, an open-source NLP initiative inspired by ChatGPT.</li>
+                            <li>Developed Python-based ML modules for regional language processing and translation.</li>
+                            <li>Collaborated with a cross-functional team to improve model accuracy and deliver culturally relevant interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in-section py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">Academic Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card bg-white p-6 rounded-2xl border border-gray-200 flex flex-col">
+                        <h3 class="text-xl font-semibold mb-2">Cricket Score Prediction</h3>
+                        <p class="text-gray-600 flex-grow mb-4">Built a score prediction model using Python and historical match data. Applied regression techniques and used Power BI for visual dashboards.</p>
+                        <a href="https://github.com/saikarthik2710/Cricket-Score-Prediction-" target="_blank" class="font-semibold text-blue-600 hover:underline">View Project &rarr;</a>
+                    </div>
+                    <div class="project-card bg-white p-6 rounded-2xl border border-gray-200 flex flex-col">
+                        <h3 class="text-xl font-semibold mb-2">Protein Structure Prediction</h3>
+                        <p class="text-gray-600 flex-grow mb-4">Created a deep learning model (CNN & LSTM) to predict protein folding. Deployed the model on Hugging Face for public access.</p>
+                        <a href="#" class="font-semibold text-blue-600 hover:underline">View Project &rarr;</a>
+                    </div>
+                    <div class="project-card bg-white p-6 rounded-2xl border border-gray-200 flex flex-col">
+                        <h3 class="text-xl font-semibold mb-2">Trip Tales - Travel Website</h3>
+                        <p class="text-gray-600 flex-grow mb-4">Developed a responsive website for travel planning using HTML, CSS, JS, and PHP with a MySQL backend for CRUD operations.</p>
+                        <a href="https://github.com/saikarthik2710/GoGlobal-" target="_blank" class="font-semibold text-blue-600 hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="fade-in-section py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">Skills & Certifications</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Programming</h3>
+                        <p class="text-gray-600">Java, Python, C</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Data/Analytics</h3>
+                        <p class="text-gray-600">SQL, MongoDB, Power BI</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Microsoft Tools</h3>
+                        <p class="text-gray-600">Excel, Word, Basic Tally</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Soft Skills</h3>
+                        <p class="text-gray-600">Communication, Teamwork, Problem Solving</p>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-center mb-6">Certifications</h3>
+                    <div class="max-w-3xl mx-auto text-center text-gray-600 space-y-2">
+                        <p>&bull; Python Essentials - Udemy</p>
+                        <p>&bull; Data Analytics and Visualization - Accenture</p>
+                        <p>&bull; Object-Oriented Programming in Java - Great Learning</p>
+                        <p>&bull; Introduction to Data Analytics - LinkedIn Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in-section py-24 bg-gray-50">
+            <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-lg text-gray-600 mb-8">I'm currently looking for new opportunities and would love to hear from you. Feel free to reach out via email or connect with me on social platforms.</p>
+                <a href="mailto:tsatyasaikarthik@gmail.com" class="bg-blue-600 text-white font-semibold py-4 px-8 rounded-full hover:bg-blue-700 transition-colors text-lg">Email Me</a>
+                <div class="mt-12">
+                    <p class="text-gray-600 mb-4">Find me on:</p>
+                    <div class="flex justify-center items-center space-x-6">
+                        <a href="https://github.com/saikarthik2710" target="_blank" class="text-gray-500 hover:text-blue-600">GitHub</a>
+                        <span class="text-gray-300">&bull;</span>
+                        <a href="https://www.linkedin.com/in/tangirala-satya-sai-karthik-836580259" target="_blank" class="text-gray-500 hover:text-blue-600">LinkedIn</a>
+                        <span class="text-gray-300">&bull;</span>
+                        <a href="https://leetcode.com/Karthik_2709/" target="_blank" class="text-gray-500 hover:text-blue-600">LeetCode</a>
+                        <span class="text-gray-300">&bull;</span>
+                        <a href="https://www.codechef.com/users/sai_karthik04" target="_blank" class="text-gray-500 hover:text-blue-600">CodeChef</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; 2024 Tangirala Satya Sai Karthik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            // Define the callback function for the observer
+            const handleIntersect = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        // Stop observing the element once it's visible
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            // Define the observer options
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            // Create the Intersection Observer
+            const sectionObserver = new IntersectionObserver(handleIntersect, observerOptions);
+
+            // Observe each section
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
